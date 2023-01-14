@@ -1,0 +1,103 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: rgb(20, 21, 31);
+}
+
+#info {
+    width: 20vw;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    border: 1px solid;
+    text-align: center;
+    color: white;
+}
+
+#info h1 {
+    padding: 10px;
+    color: black;
+    background-color: white;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size:40px;
+}
+
+#info label{
+    font-size:30px; 
+    display: block;
+    padding-bottom: 10px;
+}
+button {
+    font-size:20px;
+    display:inline-block;
+    padding:0.5em 3em;
+    border:0.16em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-family:'Roboto',sans-serif;
+    font-weight:400;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.15s;
+    background-color:rgb(20, 21, 31);
+    width:200px;
+}
+button:hover{
+    color:#DDDDDD;
+    border-color:#DDDDDD;
+}
+button:active{
+    color:#BBBBBB;
+    border-color:#BBBBBB;
+}
+@media all and (max-width:30em){
+    button{
+    display:block;
+    margin:0.4em auto;
+    }
+}
+hr {
+    border-color: white;
+}
+input[type="range"] { 
+    margin: auto;
+    -webkit-appearance: none;
+    position: relative;
+    overflow: hidden;
+    height: 40px;
+    width: 200px;
+    cursor: pointer;
+    border: 2px solid #FFFFFF;
+    border-radius: 4px;
+}
+
+::-webkit-slider-runnable-track {
+    background: rgb(20, 21, 31);;
+}
+
+/*
+ * 1. Set to 0 width and remove border for a slider without a thumb
+ * 2. Shadow is negative the full width of the input and has a spread 
+ *    of the width of the input.
+ */
+::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px; /* 1 */
+    height: 40px;
+    background: #fff;
+    box-shadow: -200px 0 0 200px rgb(255, 255, 255); /* 2 */
+}
+
+
+p{
+    color: #fff;
+}
+

@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>IA</title>
+</head>
+
+<body>
+    <section id="info">
+        <h1>Armonógrafo</h1>
+        
+        <div>
+            <label for="tamA">Tamaño I</label>
+            <input type="range" id="tamA" name="tamA" min="20" max="100">
+        </div>
+        <div>
+            <label for="tamB">Tamaño D</label>
+            <input type="range" id="tamB" name="tamB" min="20" max="100">
+        </div>
+
+        <hr>
+        <div>
+            <label for="posA">Posición I</label>
+            <input type="range" id="posA" name="posA" min="500" max="1150">
+        </div>
+        <div>
+            <label for="posB">Posición D</label>
+            <input type="range" id="posB" name="posB" min="1150" max="1800">
+        </div>
+        <hr>
+        <div>
+            <label for="vel">Velocidad</label>
+            <input type="range" id="vel" name="vel" min="1" max="300">
+        </div>
+        <hr>
+        <button onclick="limpiar()">Limpiar</button>
+        <button onclick="pause()"id="pause">Pausar</button>
+        <button onclick="location.reload()">Reiniciar</button>
+        
+        <hr>
+        <p>Sergio Castillo - UO276436 - Informática Audiovisual</p>	
+    </section>
+
+  <script src="js/matter.js"></script>
+  <script src="js/calculos.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/listeners.js"></script>
+  <script src="js/render.js"></script>
+</body>
+
+</html>
